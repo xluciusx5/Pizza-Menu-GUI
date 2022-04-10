@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.rgu.cm2100.controllers.OrderCreationController">
+    <stylesheets>
+        <URL value="@/styles/ordercreation.css" />
+    </stylesheets>
+   <children>
+      <ListView fx:id="lstOrderCreation" layoutX="145.0" layoutY="14.0" prefHeight="218.0" prefWidth="341.0" />
+      <Button fx:id="btClickMeBack" layoutX="274.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnClickMeBackClicked" text="Back" />
+      <Button layoutX="251.0" layoutY="309.0" mnemonicParsing="false" text="Add to Order" />
+   </children>
+</AnchorPane>

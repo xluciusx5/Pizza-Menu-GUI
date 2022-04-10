@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.rgu.cm2100.controllers.Test1FXMLController">
+    <stylesheets>
+        <URL value="@/styles/test1fxml.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="btnClickMe1" layoutX="133.0" layoutY="136.0" mnemonicParsing="false" onAction="#btnClickMe1Clicked" prefHeight="96.0" prefWidth="160.0" text="OrderManager" textAlignment="CENTER" textFill="#ab0c0c" textOverrun="CLIP">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblMessage1" layoutX="38.0" layoutY="184.0" prefHeight="82.0" prefWidth="268.0" />
+      <Label fx:id="lblMessage2" layoutX="300.0" layoutY="184.0" prefHeight="82.0" prefWidth="268.0" />
+      <Button fx:id="btnClickMe2" layoutX="320.0" layoutY="136.0" mnemonicParsing="false" onAction="#btnClickMe2Clicked" prefHeight="96.0" prefWidth="160.0" text="Menu Manager" textFill="#2910cd">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imageView" fitHeight="96.0" fitWidth="132.0" layoutX="240.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.rgu.cm2100.controllers.OrderController">
+    <stylesheets>
+        <URL value="@/styles/order.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ListView fx:id="lstExistingOrders" layoutX="109.0" layoutY="26.0" onMouseClicked="#lstOrderDescription" prefHeight="200.0" prefWidth="413.0" />
+            <Label fx:id="lblDescription" layoutX="206.0" layoutY="240.0" prefHeight="115.0" prefWidth="380.0" textAlignment="CENTER" />
+            <Button fx:id="btnClickMeBack" layoutX="280.0" layoutY="374.0" mnemonicParsing="false" onAction="#btnClickMeBackClicked" text="Back" />
+            <Button fx:id="btnOrderCreation" layoutX="235.0" layoutY="342.0" mnemonicParsing="false" onAction="#ClickOrderCreation" text="Create An Order!" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

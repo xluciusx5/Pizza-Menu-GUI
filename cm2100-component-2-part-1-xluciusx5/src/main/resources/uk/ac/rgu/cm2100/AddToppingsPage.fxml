@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="uk.ac.rgu.cm2100.controllers.AddToppingsPageController">
+    <stylesheets>
+        <URL value="@/styles/addtoppingspage.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="name" layoutX="95.0" layoutY="235.0" />
+      <ListView fx:id="listOfNames" layoutX="217.0" layoutY="6.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="306.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#addNamePrice" text="Add!" />
+      <Button fx:id="btnClickMeBack" layoutX="274.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnClickMeBackClicked" text="Back to Main" />
+      <TextField fx:id="price" layoutX="361.0" layoutY="235.0" />
+      <Text layoutX="170.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of Topping" />
+      <Text layoutX="361.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price of Topping" />
+      <Button fx:id="btnClickBackToAddPizza" layoutX="246.0" layoutY="325.0" mnemonicParsing="false" onAction="#btnClickBackToAddPizzaClicked" text="Back to Add a Pizza" />
+   </children>
+</AnchorPane>

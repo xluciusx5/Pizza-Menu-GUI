@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.rgu.cm2100.controllers.AddItemToMenuController">
+    <stylesheets>
+        <URL value="@/styles/additemtomenu.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="btnClickMeBack" layoutX="289.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnClickMeBackClicked" text="Back" />
+      <ListView fx:id="listOfNames" layoutX="184.0" layoutY="14.0" onMouseClicked="#fillListView" prefHeight="97.0" prefWidth="267.0" />
+      <TextField fx:id="name" layoutX="215.0" layoutY="122.0" />
+      <Button layoutX="289.0" layoutY="153.0" mnemonicParsing="false" onMouseClicked="#addName" text="Add!" />
+      <Button fx:id="btnClickShowToppings" layoutX="251.0" layoutY="188.0" mnemonicParsing="false" onAction="#btnClickShowToppingsClicked" text="Show Toppings" />
+      <Text layoutX="182.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on the Box to Show Toppings/ Crusts" />
+      <HBox fx:id="hboxCommands" layoutX="217.0" layoutY="216.0" prefHeight="100.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
